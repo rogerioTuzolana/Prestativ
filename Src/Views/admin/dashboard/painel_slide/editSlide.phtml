@@ -1,0 +1,56 @@
+<div class="wrapper">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="display:flex; justify-content:center;align-items:center;">
+  <div class="card card-outline card-primary">
+  <div class="card-body">
+    <div style="display:flex; justify-content:center;"><h4><b>Editar Slide</b></h4></div>
+    <div class="row mb-3">  
+      <div class="col-4"></div>
+      <div class="col-8">
+        <img src="{{URL}}/img/slide/{{imagem}}" style="border-radius:10px; border:solid 2px #212529;" width="110px" height="60px" alt="">
+      </div>
+    </div>
+    <form name="post" id="formRegister" method="POST" enctype="multipart/form-data" action="{{URL}}/dashboard-admin/slide/update/{{id}}">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" value="{{titulo}}" name="titulo" placeholder="Título">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" value="{{descricao}}" name="descricao" placeholder="Descrição">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" value="{{URL}}/img/{{imagem}}" name="imagem">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          
+        </div>
+        <!-- /.col -->
+        <div class="col-4">
+          <button type="submit" class="btn btn-primary btn-block">Publicar</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <a href="{{URL}}/dashboard-admin/slide" class="text-center">Voltar</a>
+  </div>
+  <div style="display:flex; justify-content:center;"><br/>{{status}}</div>
+  </div>
+  </div>
+</div>
+   

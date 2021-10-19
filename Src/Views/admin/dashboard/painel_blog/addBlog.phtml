@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="display:flex; justify-content:center;align-items:center;">
+  <div class="card card-outline card-primary">
+  <div class="card-body">
+    <form name="post" id="formRegister" method="POST" enctype="multipart/form-data" action="{{URL}}/dashboard-admin/blog/store">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="titulo" placeholder="Título">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" name="imagem">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class=""></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <textarea name="descricao" id="compose-textarea" name="descricao" placeholder="Descrição" cols="29" rows="4"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-8">
+        </div>
+        <!-- /.col -->
+        <div class="col-4">
+          <button type="submit" class="btn btn-primary btn-block">Publicar</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <a href="{{URL}}/dashboard-admin/blog" class="text-center">Voltar</a>
+  </div>
+  <div style="display:flex; justify-content:center;"><br/>{{status}}</div>
+  </div>
+  </div>
+</div>
+   

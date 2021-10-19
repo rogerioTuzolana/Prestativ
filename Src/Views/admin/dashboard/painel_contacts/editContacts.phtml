@@ -1,0 +1,84 @@
+<div class="wrapper">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="display:flex;justify-content:center;align-items:center;">
+  <div class="register-box">
+  <div class="card card-outline card-primary">
+  <div class="card-body">
+  <div style="display:flex; justify-content:center;"><h4><b>Novo Contacto</b></h4></div>
+    <form name="register" id="formRegister" method="post" action="{{URL}}/dashboard-admin/contacts/update/{{id}}">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="telefone1" value="{{telefone1}}" placeholder="Telefone 1">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-"></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="telefone2" value="{{telefone2}}" placeholder="Telefone 2">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-"></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" name="email" value="{{email}}" placeholder="Email">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-"></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="facebook" value="{{facebook}}" placeholder="Facebook">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-"></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="instagram" value="{{instagram}}" placeholder="Instagram">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-"></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="linkedin" value="{{linkedin}}" placeholder="Linkedin">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-"></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="endereco" value="{{endereco}}" placeholder="Endereço">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          
+        </div>
+        <!-- /.col -->
+        <div class="col-4">
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <a href="{{URL}}/dashboard-admin/contacts" class="text-center">Voltar</a>
+  </div>
+  </div>
+  <div style="display:flex; justify-content:center;"><br/>{{status}}</div>
+  </div>
+  </div>
+</div>
+   

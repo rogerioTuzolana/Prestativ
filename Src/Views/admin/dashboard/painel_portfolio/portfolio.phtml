@@ -1,0 +1,82 @@
+<div class="wrapper">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Tabela de Portfolio</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Portfolio</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <div style="display:flex;justify-content:space-between;">
+                  <h3 class="card-title">Tabelas de dados da Prestativ</h3>
+                  <a href="{{URL}}/dashboard-admin/portfolio/add" class="btn btn-success">Adicionar<b>+</b></a>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Imagem</th>
+                    <th>Categoria</th>
+                    <th>Descrição</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    {{itens}}
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>Imagem</th>
+                    <th>Categoria</th>
+                    <th>Descrição</th>
+                    <th></th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <section class="content" id="abrirBox" style="visibility:hidden;border-radius:20px;border:solid 2px #c1c9d7;margin-top:-25%;margin-left:25%;position:absolute;background-color:#ccd6e6;display:flex;justify-content: center;width:20%;">
+      <div style="margin:40px 0 40px 0;">
+        <form action="" >
+          <a onClick="deletePorfolio();" type="button" class="btn btn-danger">Eliminar</a>
+          <a onClick="ocultBox();" type="button" class="btn btn-primary">Cancelar</a>
+        </form>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+</div>
+
+<!-- ./wrapper -->
+

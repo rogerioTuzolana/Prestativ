@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="display:flex; justify-content:center;align-items:center;">
+  <div class="register-box">
+  <div class="card card-outline card-primary">
+  <div class="card-body">
+    <form name="register" id="formRegister" method="post" action="{{URL}}/dashboard-admin/users/update/{{id}}">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" value="{{nome}}" name="nome" placeholder="Name completo">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-user"></span>
+          </div>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" value="{{email}}" name="email" placeholder="Email">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-envelope"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>Nivel</div>
+        <div class="input-group mb-3">
+          <select name="nivel" class="btn btn-light">
+            <option value="" selected></option>
+            <option value="admin" {{nivel_admin}}>admin</option>
+            <option value="user" {{nivel_user}}>user</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          
+        </div>
+        <!-- /.col -->
+        <div class="col-4">
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+    <a href="{{URL}}/dashboard-admin/users" class="text-center">Voltar</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+   
